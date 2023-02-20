@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Darcy's Portfolio</title>
+        <link rel="stylesheet" href="./CSS/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow|Nanum+Myeongjo">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <header class="navigation height01 nav-down">
+            <div class="inline-block hover logo">
+                <a href="index.html"><img src="Images/Mode=Light, Size=Default.png" alt="Logo Image"></a>                
+            </div>
+            <nav class="inline-block">
+                <ul class="horizontal">
+                    <a href="#About" class="hover"><li class="inline-block">About</li></a>
+                    <a href="#Skills" class="hover"><li class="inline-block">Skills</li></a>
+                    <a href="#Work" class="hover"><li class="inline-block">Work</li></a>
+                    <li class="inline-block hover">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="heroImg" id="About">
+            <div class="feature">
+                <img src="Images/Hero Img.jpg" alt="Hero Image">
+            </div>
+            <div class="content">
+                <p>Darcy has a great empathic connection to others especially when they face difficulties with technology based mediums.
+                    He is keen to understand how their problem/s are misaligning their expectations, limiting their understanding of a
+                    product or feature. He strives to support others in adopting technology to function in the digital age.</p>
+                <!--<button>Download Resume</button>-->
+            </div>
+        </section>
+        <!--My UX Skills section coded using CSS flex-->
+        <section class="mySkills"><a id="Skills"></a>
+            <h1 class="title">My UX Skills</h1>
+            <div class="flexContainer">
+                <div class="flexChild">
+                    <img src="Images/eye-svgrepo-com.svg" alt="Skill Image">
+                    <h3>Eye For Detail</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="flexChild">
+                    <img src="Images/cropping-tool-svgrepo-com.svg" alt="Skill Image">
+                    <h3>Technical Understanding</h3>
+                    <p>Keeping in mind the technical limits and complications.</p>
+                </div>
+                <div class="flexChild">
+                    <img src="Images/accessibility-icon.svg" alt="Skill Image">
+                    <h3>Accessible Design</h3>
+                    <p>Making sure no one is left behind.</p>
+                </div>
+            </div>
+            <div class="flexContainer">
+                <div class="flexChild Highlight">
+                    <ul>
+                        <li>Observation</li>
+                        <li>Competitive Analysis</li>
+                        <li>Heuristic Evaluation</li>
+                        <li>Accessible Design</li>
+                    </ul>
+                </div>
+                <div class="flexChild Highlight">
+                    <ul>
+                        <li>Design Systems</li>
+                        <li>iOS & Android Guidelines</li>
+                        <li>Front-End Development</li>
+                        <li>Graphic Design</li>
+                    </ul>
+                </div>
+                <div class="flexChild Highlight">
+                    <ul>
+                        <li>Sketching</li>
+                        <li>Wireframing</li>
+                        <li>Visual Design</li>
+                        <li>Interactive Prototyping</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--My Work Section Constructed using CSS Grid-->
+        <section class="myWork" id="Work">
+            <h1 class="title">My Work</h1>
+            <div class="workGrid">
+                <div class="workItem">
+                    <h4>Project 01</h4>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/RSPCA Before.png" alt="Image 01" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/RSPCA After.png" alt="Image 02" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/RSPCA After.png" alt="Image 03" width="1100" height="500">
+                        </div>
+                        </div>                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="Group">
+                        <h2>RSPCA Refocus & Reflow</h2>
+                        <h5 class="LightText">- Mobile focused review</h5>
+                        <p>Revewing RSCPA's current webpage to eleviate the strains of outdated design choices and unecessary roadblocks.</p>
+                        <div class="inlineStack">
+                            <div><h5>Year:</h5><p class="caption">2022</p></div>
+                            <div><h5>Timeline:</h5><p class="caption" >3 weeks</p></div>
+                            <div><h5>Tools:</h5><p class="caption">Figma, Pen & Paper</p></div>
+                        </div>
+                        <a href="html/Project 01.html"><button>View</button></a>
+                    </div>
+                </div>
+                <div class="workItem">
+                    <h4>Project 02</h4>
+                    <div id="demo2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/RSPCA Before.png" alt="Image 01" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/RSPCA After.png" alt="Image 02" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/RSPCA After.png" alt="Image 03" width="1100" height="500">
+                        </div>
+                        </div>                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="Group">
+                        <h2>ABC Usability Review (abc.net.au)</h2>
+                        <h5 class="LightText">- Desktop focused review</h5>
+                        <p>A revevaluation of the ABC news website's usability with a focus on the
+                            desktop portion of the website.</p>
+                        <div class="inlineStack">
+                            <div><h5>Year:</h5><p class="caption">2022</p></div>
+                            <div><h5>Timeline:</h5><p class="caption" >3 weeks</p></div>
+                            <div><h5>Tools:</h5><p class="caption">Figma, Card sort</p></div>
+                        </div>
+                        <a href="html\Project"><button>View</button></a>
+                    </div>
+                </div>
+            </div>
+            <a href="html/Project 02.html" target="_self" id="Projects"><h3 class="center hover">View All Projects</h3></a>
+        </section>
+        <footer>
+            <ul class="horizontal">
+                <a href="index.html" class=""><li class="inline-block hoverdark">About</li></a>
+                <a href="#Skills" class=""><li class="inline-block hoverdark">Skills</li></a>
+                <a href="#Work" class=""><li class="inline-block hoverdark">Work</li></a>
+                <li class="inline-block hoverdark">Contact</li>
+            </ul>
+        </footer>
+    </body>
+    <script src="/JS/index.js"></script>
+</html>
