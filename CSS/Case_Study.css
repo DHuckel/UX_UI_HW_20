@@ -1,0 +1,67 @@
+* {
+    outline: 1px solid red;
+}
+body {
+    margin: 0 0;
+}
+.Left {
+    float: left;
+}
+.Right {
+    float: right;
+}
+FullWidth {
+    width: 100%;
+}
+.Horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Vertical li {
+    padding: 20px;
+}
+section {
+    margin-bottom: 150px;
+}
+.InlineBlock * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.Block * {
+    display: block;
+}
+.FlexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.FlexBox {
+    flex-grow: 1;
+}
+.Caption {
+    width: 400px;
+}
+.CarouselImage {
+    width: 500px;
+    height: 400px;
+    background-color: gray;
+}
+.InfoIcon {
+    max-width: 60px;
+    padding: 5px;
+}
+.IconLabel {
+    display: inline;
+    
+}
+.InfoIconGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
