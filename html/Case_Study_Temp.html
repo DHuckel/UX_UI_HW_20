@@ -10,11 +10,11 @@
 </head>
 <body>
     <section id="Intro">
-        <h2>Business / Company Name</h2>
+        <h1 class="SectionTitle">Business / Company Name</h1>
         <div class="FlexContainer">
-            <div class="Caption FlexBox">
-                <h4>Product name</h4>
-                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore obcaecati assumenda accusamus at ut cupiditate mollitia tenetur, ab iusto laboriosam?</p>
+            <div class="Caption FlexChild">
+                <h3>Product name</h3>
+                <p class="BodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore obcaecati assumenda accusamus at ut cupiditate mollitia tenetur, ab iusto laboriosam?</p>
                 <div class="IconGroup Horizontal">
                     <div class="InfoIconGroup">
                         <img src="/Images/graph-svgrepo-com.svg" alt="" class="InfoIcon">
@@ -34,80 +34,152 @@
                     </div>
                 </div>
             </div>
-            <div class="CarouselImage FlexBox"></div>
+            <div class="CarouselImage FlexChild"></div>
         </div>
         <p class="BodyText">Product/brand offering (suite?) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus deleniti vel aperiam autem nobis sed, asperiores aspernatur eaque corrupti quos vero. Magnam iure maiores laboriosam repellendus voluptatibus laborum. Expedita.</p>
         <ul class="InlineBlock Vertical FullWidth">
-            <li>
+            <li class="DotPointLabel">
                 <img src="/Images/graph-svgrepo-com.svg" alt="InfoIcon" class="InfoIcon">
-                <p>Dummy Text</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi amet maxime minima a alias quaerat delectus commodi? In ducimus adipisci voluptate vero odio suscipit nesciunt placeat. Dolorum, ad.</p>
             </li>
-            <li>
+            <li class="DotPointLabel">
                 <img src="/Images/graph-svgrepo-com.svg" alt="InfoIcon" class="InfoIcon">
-                <p>Dummy Text</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi amet maxime minima a alias quaerat delectus commodi? In ducimus adipisci voluptate vero odio suscipit nesciunt placeat. Dolorum, ad.</p>
             </li>
-            <li>
+            <li class="DotPointLabel">
                 <img src="/Images/graph-svgrepo-com.svg" alt="InfoIcon" class="InfoIcon">
-                <p>Dummy Text</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi amet maxime minima a alias quaerat delectus commodi? In ducimus adipisci voluptate vero odio suscipit nesciunt placeat. Dolorum, ad.</p>
             </li>
         </ul>
     </section>
-    <section>
-        <h1>Research</h1>
+    <section id="Research">
+        <h1 class="SectionTitle">Research</h1>
         <div class="Quote">
             <p>What the perception is of the Company. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi labore fuga ipsum laborum veritatis laudantium, saepe molestiae esse sunt exercitationem laboriosam asperiores consectetur architecto, consequatur cupiditate facilis vero corporis.</p>
         </div>
-        <div class="Left"></div>
-        <div class="Right">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore placeat ducimus dicta quasi! Iste totam aut expedita rem dolorum dolorem assumenda, in, a illo fugit, quos atque laborum dolore laudantium. Nesciunt velit qui, in minima harum ea itaque rem beatae assumenda suscipit, cum nihil ipsa doloremque totam esse temporibus.</p>
-            <div class="S-spacer"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat reiciendis sapiente iusto veritatis unde ullam quia animi quasi debitis!</p>
+        <div class="FlexContainer Horizontal">
+            <div class="FlexChild CarouselImage">
+
+            </div>
+            <div class="FlexChild Caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore placeat ducimus dicta quasi! Iste totam aut expedita rem dolorum dolorem assumenda, in, a illo fugit, quos atque laborum dolore laudantium. Nesciunt velit qui, in minima harum ea itaque rem beatae assumenda suscipit, cum nihil ipsa doloremque totam esse temporibus.</p>
+                <div class="S-spacer"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat reiciendis sapiente iusto veritatis unde ullam quia animi quasi debitis!</p>
+            </div>
         </div>
-        <div>
-            <h4></h4>
-            <div>
-                <p></p>
-                <p></p>
+        <div class="Comparison FullWidth">
+            <div class="FullWidth">
+                <h3 class="Centre">Positive</h3>
+                <div class="Comparison FullWidth">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="FullWidth">
+                <h3 class="Centre">Negative</h3>
+                <div class="Comparison">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum.</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="ProblemStatement">
-        <h1></h1>
-        <div>
-            <div class="CardVertScroll"></div>
-            <div class="FeatureImg"></div>
-        </div>
+        <h1 class="SectionTitle">Problem Statement</h1>
+        <div class="FlexContainer">
+            <div class="FlexChild">
+                <div class="VertScroll">
+                    <div class="VertScrollCard">
+                        <h3>Issue 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem natus sed asperiores excepturi delectus.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ea!</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem.</li>
+                        </ul>
+                    </div>
+                    <div class="VertScrollCard">
+                        <h3>Issue 02</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem natus sed asperiores excepturi delectus.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ea!</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem.</li>
+                        </ul>
+                    </div>
+                    <div class="VertScrollCard">
+                        <h3>Issue 03</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem natus sed asperiores excepturi delectus.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ea!</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem.</li>
+                        </ul>
+                    </div>
+                    <div class="VertScrollCard">
+                        <h3>Issue 04</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem natus sed asperiores excepturi delectus.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ea!</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem.</li>
+                        </ul>
+                    </div>
+                    <div class="VertScrollCard">
+                        <h3>Issue 05</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem natus sed asperiores excepturi delectus.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ea!</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Vertical FlexChild FullWidth">
+                <div class="CarouselImage FlexChild"></div>
+                <p class="BodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti atque quia sapiente, fuga magnam voluptate?</p>
+            </div>
+        </div>            
     </section>
     <section id="Iterations">
-        <h1>Iterations</h1>
-        <div>
-            <div class="IterationCard">
+        <h1 class="SectionTitle">Iterations</h1>
+        <div class="FlexContainer">
+            <div class="IterationCard FlexChild">
                 <h4>Original</h4>
-                <div><img src="" alt=""></div>
-                <p></p>
+                <img src="" alt="Iteration Image">
+                <p class="Caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto consequatur neque sunt mollitia exercitationem in minima cumque, voluptates nulla?</p>
             </div>
-            <div class="IterationCard">
+            <div class="IterationCard FlexChild">
                 <h4>1st Iteration</h4>
-                <div><img src="" alt=""></div>
-                <p></p>
+                <img src="" alt="Iteration Image">
+                <p class="Caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto consequatur neque sunt mollitia exercitationem in minima cumque, voluptates nulla?</p>
             </div>
-            <div class="IterationCard">
+            <div class="IterationCard FlexChild">
                 <h4>2nd / Final Iteration</h4>
-                <div><img src="" alt=""></div>
-                <p></p>
+                <img src="" alt="Iteration Image">
+                <p class="Caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto consequatur neque sunt mollitia exercitationem in minima cumque, voluptates nulla?</p>
             </div>
         </div>
     </section>
-    <section class="Prototype">
-        <h1>Prototype</h1>
-        <div>
-            <div class="MobilePrototype">
-                <div></div>
-                <div></div>
+    <section id="Prototype">
+        <h1 class="SectionTitle">Prototype</h1>
+        <div class="FlexContainer PrototypeContainer">
+            <div class="Prototype Vertical MobilePrototype">
+                <img src="" alt="Prototype Image" class="MobilePrototype PrototypeImage">
+                <div class="WidthLabel">
+                    <div class="Vert"></div>
+                    <hr class="Horiz">
+                    <p>Mobile</p>
+                    <hr class="Horiz">
+                    <div class="Vert"></div>
+                </div>
             </div>
-            <div class="DesktopPrototype">
-                <div></div>
-                <div></div>
+            <div class="Prototype Vertical DesktopPrototype">
+                <img src="" alt="Prototype Image" class="DesktopPrototype PrototypeImage">
+                <div class="WidthLabel">
+                    <div class="Vert"> </div>
+                    <hr class="Horiz">
+                    <p>Desktop</p>
+                    <hr class="Horiz">
+                    <div class="Vert"></div>
+                </div>
             </div>
         </div>
     </section>

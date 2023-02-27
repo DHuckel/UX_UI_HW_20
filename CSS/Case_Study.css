@@ -3,6 +3,10 @@
 }
 body {
     margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .Left {
     float: left;
@@ -10,13 +14,20 @@ body {
 .Right {
     float: right;
 }
-FullWidth {
+.Centre {
+    text-align: center;
+}
+.FullWidth {
     width: 100%;
 }
 .Horizontal {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Horizontal * {
+
 }
 .Vertical {
     display: flex;
@@ -27,7 +38,19 @@ FullWidth {
     padding: 20px;
 }
 section {
+    width: 90%;
+    max-width: 1440px;
+    display: block;
     margin-bottom: 150px;
+    padding: 0px 40px 0px 40px;
+}
+.SectionTitle {
+    translate: -20px;
+    margin-bottom: 50px;
+}
+.BodyText {
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 .InlineBlock * {
     display: inline-block;
@@ -38,19 +61,25 @@ section {
 }
 .FlexContainer {
     display: flex;
-    flex-direction: row;
     width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
-.FlexBox {
+.FlexChild {
     flex-grow: 1;
 }
 .Caption {
-    width: 400px;
+    max-width: 530px;
+    padding: 15px;
 }
 .CarouselImage {
-    width: 500px;
-    height: 400px;
+    /*width: 500px;*/
+    width: 100%;
     background-color: gray;
+    aspect-ratio: 12 / 8;
+}
+.Feature {
+    height: 530px;
 }
 .InfoIcon {
     max-width: 60px;
@@ -64,4 +93,105 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.DotPointLabel *{
+    display: inline;
+}
+.Quote {
+    border-left: 2px solid black;
+    translate: 50px;
+    width: max-content;
+}
+.Quote p {
+    padding: 5px;
+    margin-left: 5px;
+    width: 900px;
+}
+.S-spacer {
+    height: 60px;
+}
+.Comparison {
+    display: flex;
+    flex-direction: row;
+}
+.Comparison p {
+    padding: 10px;
+    width: 250px;
+}
+.VertScroll {
+    overflow: scroll;
+    /*width: 420px;*/
+    height: 600px;
+    max-width: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin: 0px 0px;
+}
+.VertScrollCard{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+.IterationCard {
+    text-align: center;
+    width: 100%;
+}
+.IterationCard p {
+    text-align: left;
+}
+.IterationCard:not(:last-child) {
+    margin-right: 10px;
+}
+.Prototype {
+    text-align: center;
+}
+.PrototypeImage {
+    outline: 2px solid black;
+    margin-bottom: 10px;
+}
+.Prototype:first-child {
+    margin-right: 40px;
+}
+.WidthLabel {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.WidthLabel * {
+    margin: 0;
+}
+.WidthLabel p {
+    padding: 3px;
+}
+.MobilePrototype {
+    aspect-ratio: 9 / 16;
+    flex-grow: 0.5;
+}
+.DesktopPrototype {
+    aspect-ratio: 16 / 9;
+    flex-grow: 2;
+}
+.PrototypeContainer {
+    width: 100%;
+}
+hr {
+    border: 2px solid black;
+    margin: 0;
+}
+.Horiz {
+    width: 100%;
+    height: 0px;
+    flex-grow: 1;
+}
+.Vert {    
+    /*transform: rotate(90deg);
+    rotate: 90deg;*/
+    background-color: black;
+    height: 30px;
+    width: 10px;
 }
