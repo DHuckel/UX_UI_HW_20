@@ -18,6 +18,9 @@ body {
 .Centre {
     text-align: center;
 }
+.Tight {
+    margin: 0 0;
+}
 .FullWidth {
     width: 100%;
 }
@@ -95,6 +98,7 @@ section {
 }
 .IconGroup {
     padding: 15px;
+    padding: 0px 15px 15px 15px;
 }
 .InfoIconGroup {
     display: flex;
