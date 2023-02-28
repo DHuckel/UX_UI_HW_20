@@ -1,5 +1,6 @@
 * {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
+    background-color: rgba(0, 100, 120, 0.1);
 }
 body {
     margin: 0 0;
@@ -25,9 +26,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-.Horizontal * {
-
 }
 .Vertical {
     display: flex;
@@ -64,22 +62,28 @@ section {
     width: 100%;
     margin-bottom: 50px;
     flex-wrap: nowrap;
+    height: fit-content;
 }
 .FlexChild {
     flex-grow: 1;
 }
+.AnnotationCoupling {
+    aspect-ratio: 16 / 9;
+}
 .Caption {
-    max-width: 530px;
+    max-width: 30%;
     padding: 15px;
+    min-width: 30%;
 }
 .CarouselImage {
     /*width: 500px;*/
     width: 100%;
     background-color: gray;
-    aspect-ratio: 12 / 8;
+    aspect-ratio: 12 / 8 !important;
 }
 .Feature {
-    height: 530px;
+    width: 100%;
+    min-width: 50%;
 }
 .InfoIcon {
     max-width: 60px;
@@ -89,23 +93,30 @@ section {
     display: inline;
     
 }
+.IconGroup {
+    padding: 15px;
+}
 .InfoIconGroup {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 15px;
 }
 .DotPointLabel *{
     display: inline;
 }
 .Quote {
     border-left: 2px solid black;
-    translate: 50px;
-    width: max-content;
+    translate: 30px;
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    margin-bottom: 50px;
 }
 .Quote p {
     padding: 5px;
     margin-left: 5px;
-    width: 900px;
+    display: flex;
 }
 .S-spacer {
     height: 60px;
@@ -113,28 +124,41 @@ section {
 .Comparison {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 .Comparison p {
     padding: 10px;
-    width: 250px;
+    display: flex;
+}
+.Comparison div.FullWidth {
+    padding: 10px;
 }
 .VertScroll {
     overflow: scroll;
+    overflow-x: hidden;
     /*width: 420px;*/
-    height: 600px;
+    width: 40%;
     max-width: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
     margin: 0px 0px;
+    flex-grow: 0.5;
 }
+
 .VertScrollCard{
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: fit-content;
     background-color: gray;
     border-radius: 10px;
     margin: 10px;
+    flex-grow: 0.5;
+    padding: 5px;
+}
+.VertScrollCard p {
+
 }
 .IterationCard {
     text-align: center;
