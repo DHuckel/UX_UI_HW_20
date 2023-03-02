@@ -1,6 +1,6 @@
 * {
-    /*outline: 1px solid red;*/
-    background-color: rgba(0, 100, 120, 0.1);
+    /*outline: 1px solid red;
+    background-color: rgba(0, 100, 120, 0.1);*/
 }
 body {
     margin: 0 0;
@@ -38,19 +38,30 @@ body {
 .Vertical li {
     padding: 20px;
 }
+.Vertical li img{
+    margin-right: 40px;
+}
 section {
     width: 90%;
     max-width: 1440px;
     display: block;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     padding: 0px 40px 0px 40px;
 }
+section {
+    -webkit-box-shadow: 5px 5px 26px 3px rgba(0,0,0,0.33);
+    box-shadow: 5px 5px 26px 3px rgba(0,0,0,0.33);
+    padding: 25px;
+    border-radius: 1%;    
+}
 .SectionTitle {
-    translate: -20px;
+    /*translate: -20px;*/
+}
+.TitleSpacing {
     margin-bottom: 50px;
 }
 .BodyText {
-    margin-left: 30px;
+    margin-left: 5px;
     margin-bottom: 30px;
 }
 .InlineBlock * {
@@ -72,11 +83,19 @@ section {
 }
 .AnnotationCoupling {
     aspect-ratio: 16 / 9;
+    border: 1px  #cccccc7a solid;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .Caption {
     max-width: 30%;
-    padding: 15px;
     min-width: 30%;
+}
+.PadLeft {
+    padding-left: 10px;
+}
+.PadRight {
+    padding-right: 10px;
 }
 .CarouselImage {
     /*width: 500px;*/
@@ -88,24 +107,30 @@ section {
     width: 100%;
     min-width: 50%;
 }
+.Highlight {
+    background-color: #618a86;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
 .InfoIcon {
-    max-width: 60px;
+    max-width: 90px;
     padding: 5px;
 }
 .IconLabel {
-    display: inline;
-    
+    display: inline;    
 }
 .IconGroup {
-    padding: 15px;
-    padding: 0px 15px 15px 15px;
+    padding-bottom: 15px;
 }
 .InfoIconGroup {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
-    padding: 10px 20px 15px 20px;
+    padding: 10px 5px 15px 5px;
+    width: 115px;
+    min-width: 99px;
 }
 .DotPointLabel *{
     vertical-align: middle;
@@ -116,6 +141,16 @@ section {
 }
 .DotPointLabel img{
     width: 20%;
+}
+#Research div.FlexContainer {
+    border-radius: 10px;
+    border: 3px solid #618a86;
+    overflow: hidden;
+}
+#Research div.FlexContainer div.Caption {
+    background-color: #618a86;
+    padding: 10px 10px 10px 10px;
+    color: #ebebeb;
 }
 .Quote {
     border-left: 2px solid black;
@@ -129,6 +164,7 @@ section {
     padding: 5px;
     margin-left: 5px;
     display: flex;
+    margin-right: 10px;
 }
 .S-spacer {
     height: 60px;
@@ -136,12 +172,44 @@ section {
 .Comparison {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 .Comparison p {
     padding: 10px;
     display: flex;
+}
+.Divider {
+    width: 8px;
+    background-color: black;
+}
+.Comparison ul {
+    list-style: none;
+}
+.Positive {
+    background-color: rgba(0, 128, 0, .2);
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid rgb(0, 128, 0);
+    border-right: none;
+}
+.Positive div.Comparison ul li::before{
+    content: "+";
+    padding-right: 5px;
+    color: green;
+}
+.Negative div.Comparison ul li::before{
+    content: "-";
+    padding-right: 5px;
+    color: red;
+}
+div.Comparison ul li::before {
+    font-size: xx-large;
+}
+.Negative {
+    background-color: rgba(128, 0, 0, .2);
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid rgb(128, 0, 0);
+    border-left: none;
 }
 .Comparison div.FullWidth {
     padding: 10px;
@@ -150,6 +218,8 @@ section {
     overflow: scroll;
     overflow-x: hidden;
     /*width: 420px;*/
+}
+.CardScroll {
     width: 40%;
     max-width: 430px;
     display: flex;
@@ -158,36 +228,97 @@ section {
     align-content: space-between;
     margin: 0px 0px;
     flex-grow: 0.5;
+    box-shadow: 
+        /*inset 0px 11px 8px -10px #CCC,*/
+        inset 0px -11px 8px -10px #CCC;
 }
-
 .VertScrollCard{
     width: 100%;
     height: fit-content;
-    background-color: gray;
-    border-radius: 10px;
+    background-color: #ffffff;
+    color: #07100f;
+    border: 3px solid #618a86;
+    border-radius: 5px;
+    overflow: hidden;
     margin: 10px;
     flex-grow: 0.5;
-    padding: 5px;
+    -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
+}
+.VertScrollCard h3 {
+    background-color: #618a86;
+    color: #ffffff;
+    padding: 5px 0px 8px 5px;
 }
 .VertScrollCard p {
-
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.VertScrollCard ul {
+    list-style: none;
+    padding-left: 5px;
+}
+.VertScrollCard li {
+    font-weight: 300;
+}
+.VertScrollCard li::before {
+    content: "-";
+    padding-right: 5px;
+    font-weight: 800;
+}
+#Iterations div.FlexContainer *:not(img){
+    background-color: #618a86;
+    overflow: hidden;
+    color: #ebebeb;
+}
+#Iterations div.FlexContainer img{
+    background-color: white;
 }
 .IterationCard {
     text-align: center;
     width: 100%;
+    outline: 3px solid #618a86;
+    -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
+}
+.IterationCard:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+.IterationCard:last-child {
+    border-radius: 0px 10px 10px 0px;
 }
 .IterationCard p {
     text-align: left;
+    padding: 5px 10px 0px 10px;
+    font-weight: 500;
+}
+.ImageFit {
+    object-fit: contain;
+    width: 100%;
+}
+.IterationImage {
+    width: 100%;
+    height: 760px;
+    object-fit: contain;
+    object-position: center top;
+    overflow-x: auto;
 }
 .IterationCard:not(:last-child) {
     margin-right: 10px;
 }
 .Prototype {
     text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    border: 3px solid #618a86;
+    border-radius: 10px;
 }
 .PrototypeImage {
-    outline: 2px solid black;
     margin-bottom: 10px;
+    width: 100%;
+    object-fit: scale-down;
+    height: 1050px;
 }
 .Prototype:first-child {
     margin-right: 40px;
@@ -197,6 +328,7 @@ section {
     height: 30px;
     display: flex;
     align-items: center;
+    background-color: #618a86;
 }
 .WidthLabel * {
     margin: 0;
@@ -204,16 +336,31 @@ section {
 .WidthLabel p {
     padding: 3px;
 }
+.WidLabel {
+    background-color: #618a86;
+    width: 100%;
+    color: #ebebeb;
+    height: 82px;
+    padding-top: 10px;
+}
 .MobilePrototype {
     aspect-ratio: 9 / 16;
     flex-grow: 0.5;
+    justify-content: flex-end;
+    align-items: center;
+    height: fit-content;
+}
+.MobilePrototype * {
+    /*max-width: 70%;*/
 }
 .DesktopPrototype {
-    aspect-ratio: 16 / 9;
-    flex-grow: 2;
+    aspect-ratio: 4 / 3;
+    /*flex-grow: 1;*/
+    object-fit: contain;
 }
 .PrototypeContainer {
     width: 100%;
+    align-items: baseline;
 }
 hr {
     border: 2px solid black;
@@ -223,6 +370,9 @@ hr {
     width: 100%;
     height: 0px;
     flex-grow: 1;
+    background-color: black;
+    height: 4px;
+
 }
 .Vert {    
     /*transform: rotate(90deg);
@@ -233,4 +383,44 @@ hr {
 }
 .SubText {
     padding-left: 5px;
+}
+.carousel {
+    width: 500px;
+    height: 500px;
+}
+.carousel-inner img {
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators {
+    background-color: rgba(255, 255, 255,0.5) !important;
+    margin-bottom: 0 !important;
+    height: 30px;
+}
+.carousel-indicators li {
+    background-color: #373738 !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1 !important;
+    top: 470px !important;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    opacity: .6;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    opacity: .9;
+}
+#demo3 {
+    width: 100%;
 }
