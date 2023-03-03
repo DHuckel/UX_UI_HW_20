@@ -1,0 +1,57 @@
+$(document).ready(function(){
+    $(".MPrototype").click(function(){
+        $(".MPrototype").addClass("Selected");
+        $(".DPrototype").removeClass("Selected");
+        $(".DesktopPrototype").removeClass("Active");
+        $(".MobilePrototype").addClass("Active");
+    });
+    $(".DPrototype").click(function(){
+        $(".DPrototype").addClass("Selected");
+        $(".MPrototype").removeClass("Selected");
+        $(".MobilePrototype").removeClass("Active");
+        $(".DesktopPrototype").addClass("Active");
+    });
+})
+
+$(document).ready(function(){
+    $(".Choice01").click(function(){
+        $(".ItemIndicator").removeClass("IndicatorOn");
+        $(".ItemChoice").removeClass("Active");
+        $(".VertScrollCard").removeClass("Chosen");
+        $(".Indic01").addClass("IndicatorOn");
+        $(".Image01").addClass("Active");
+        $(".Card01").addClass("Chosen");
+    })
+    $(".Choice02").click(function(){
+        $(".ItemIndicator").removeClass("IndicatorOn");
+        $(".ItemChoice").removeClass("Active");
+        $(".VertScrollCard").removeClass("Chosen");
+        $(".Indic02").addClass("IndicatorOn");
+        $(".Image02").addClass("Active");
+        $(".Card02").addClass("Chosen");
+    })
+    $(".Choice03").click(function(){
+        $(".ItemIndicator").removeClass("IndicatorOn");
+        $(".ItemChoice").removeClass("Active");
+        $(".VertScrollCard").removeClass("Chosen");
+        $(".Indic03").addClass("IndicatorOn");
+        $(".Image03").addClass("Active");
+        $(".Card03").addClass("Chosen");
+    })
+    $(".Choice04").click(function(){
+        $(".ItemIndicator").removeClass("IndicatorOn");
+        $(".ItemChoice").removeClass("Active");
+        $(".VertScrollCard").removeClass("Chosen");
+        $(".Indic04").addClass("IndicatorOn");
+        $(".Image04").addClass("Active");
+        $(".Card04").addClass("Chosen");
+    })
+    $(".Choice05").click(function(){
+        $(".ItemIndicator").removeClass("IndicatorOn");
+        $(".ItemChoice").removeClass("Active");
+        $(".VertScrollCard").removeClass("Chosen");
+        $(".Indic05").addClass("IndicatorOn");
+        $(".Image05").addClass("Active");
+        $(".Card05").addClass("Chosen");
+    })
+})

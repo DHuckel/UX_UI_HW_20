@@ -41,6 +41,9 @@ body {
 .Vertical li img{
     margin-right: 40px;
 }
+#Intro {
+    margin-top: 100px;
+}
 section {
     width: 90%;
     max-width: 1440px;
@@ -86,6 +89,7 @@ section {
     border: 1px  #cccccc7a solid;
     border-radius: 10px;
     overflow: hidden;
+    border: 3px solid #618a86;
 }
 .Caption {
     max-width: 30%;
@@ -245,10 +249,15 @@ div.Comparison ul li::before {
     -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
 }
+.VertScrollCard:hover {
+    border: 3px solid #7bb0ab;
+    background-color: #7bb0ab;
+    cursor: pointer;
+}
 .VertScrollCard h3 {
     background-color: #618a86;
     color: #ffffff;
-    padding: 5px 0px 8px 5px;
+    padding: 5px 0px 10px 5px;
 }
 .VertScrollCard p {
     padding: 5px;
@@ -267,28 +276,34 @@ div.Comparison ul li::before {
     padding-right: 5px;
     font-weight: 800;
 }
-#Iterations div.FlexContainer *:not(img){
+.Head {
+    height: 60px;
+}
+.Body {
+    height: 100%;
+}
+.IterationGridCard *:not(img){
     background-color: #618a86;
     overflow: hidden;
     color: #ebebeb;
 }
-#Iterations div.FlexContainer img{
+.IterationGridCard img{
     background-color: white;
 }
-.IterationCard {
+.IterationGridCard {
     text-align: center;
     width: 100%;
     outline: 3px solid #618a86;
     -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.67);
 }
-.IterationCard:first-child {
+.IterationGridCard:first-child {
     border-radius: 10px 0px 0px 10px;
 }
-.IterationCard:last-child {
+.IterationGridCard:last-child {
     border-radius: 0px 10px 10px 0px;
 }
-.IterationCard p {
+.IterationGridCard p {
     text-align: left;
     padding: 5px 10px 0px 10px;
     font-weight: 500;
@@ -304,8 +319,15 @@ div.Comparison ul li::before {
     object-position: center top;
     overflow-x: auto;
 }
-.IterationCard:not(:last-child) {
-    margin-right: 10px;
+.IterationGrid {
+    display: grid;
+    grid: auto / auto auto auto;
+    grid-gap: 10px;
+}
+.IterationGridCard {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 60px 760px auto;
 }
 .Prototype {
     text-align: center;
@@ -313,6 +335,7 @@ div.Comparison ul li::before {
     align-items: center;
     border: 3px solid #618a86;
     border-radius: 10px;
+    overflow: hidden;
 }
 .PrototypeImage {
     margin-bottom: 10px;
@@ -343,7 +366,8 @@ div.Comparison ul li::before {
     height: 82px;
     padding-top: 10px;
 }
-.MobilePrototype {
+.MobPrototype {
+    display: flex;
     aspect-ratio: 9 / 16;
     flex-grow: 0.5;
     justify-content: flex-end;
@@ -353,14 +377,16 @@ div.Comparison ul li::before {
 .MobilePrototype * {
     /*max-width: 70%;*/
 }
-.DesktopPrototype {
-    aspect-ratio: 4 / 3;
-    /*flex-grow: 1;*/
+.DeskPrototype {
+    /*aspect-ratio: 4 / 3;
+    flex-grow: 1;*/
     object-fit: contain;
 }
 .PrototypeContainer {
     width: 100%;
     align-items: baseline;
+    display: flex;
+    flex-direction: row;
 }
 hr {
     border: 2px solid black;
@@ -423,4 +449,155 @@ hr {
 }
 #demo3 {
     width: 100%;
+}
+.ItemView {
+    width: 950px;
+    height: 100%;
+}
+.ChoiceRange {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.ItemChoice {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ItemChoice * {
+    width: 100%;
+    height: 100%;
+}
+.IndicatorSelection {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+    border-top: 3px solid #618a86;
+    border-left: 3px solid #618a86;
+}
+.ItemIndicator{
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    background-color: #618a86;
+    color: #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ItemIndicator:hover {
+    cursor: pointer;
+    background-color: #7bb0ab;
+}
+.ItemIndicator p {
+    margin: 0;
+}
+.IndicatorOn {
+    background-color: #7bb0ab;
+    color: #07100f;
+}
+.Chosen {
+    background-color: #7bb0ab;
+    border: 3px solid #7bb0ab;
+}
+.DualOption {
+    border: 3px solid #618a86;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.Selector {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 3px solid #618a86;
+}
+.Selector h3 {
+    padding: 8px;
+    margin: inherit;
+    width: 100%;
+    text-align: center;
+}
+.Selector h3:hover {
+    cursor: pointer;
+    background-color: #7bb0ab;
+} 
+.Selected {
+    background-color: #618a86;
+    color: #ebebeb;
+    height: 100%;
+}
+.Active {
+    display: block !important;
+}
+.Option {
+    display: none;
+}
+.DualOption {
+    display: none;
+}
+@media only screen and (max-width:1351px){
+    .InfoIconGroup {
+        width: 99px;
+    }
+    .IterationImage {
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width:1300px){
+    .PrototypeContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .DualOption {
+        display: block;
+    }
+    .PrototypeContainer{
+        display: none;
+    }
+}
+@media only screen and (max-width:900px){
+    .Caption {
+        max-width: none;
+    }
+    .carousel {
+        width: auto;
+    }
+    .FlexContainer {
+        flex-direction: column;
+    }
+    .IterationGrid {
+        grid-auto-rows: auto;
+        grid: auto auto auto / auto;
+        grid-gap: 30px;       
+    }
+    .Img {
+        width: 450px;
+    }
+    .Head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Img {grid-area: Img;}
+    .Head {grid-area: Head;}
+    .Body {grid-area: Body;}
+    .IterationGridCard {
+        display: grid;
+        grid-template-rows: 60px auto;
+        grid-template-areas: 
+        'Img Head'
+        'Img Body';
+    }
+    .IterationGridCard {
+        border-radius: 10px !important;
+        overflow: hidden;
+    }
 }
